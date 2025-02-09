@@ -20,6 +20,7 @@ app_license = "mit"
 # 		"has_permission": "globalsphere.api.permission.has_app_permission"
 # 	}
 # ]
+api_version = 1
 
 # Includes in <head>
 # ------------------
