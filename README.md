@@ -1,0 +1,7 @@
+## GlobalSphere
+
+Task
+
+#### License
+
+mit
