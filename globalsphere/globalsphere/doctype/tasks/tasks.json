@@ -7,7 +7,9 @@
  "engine": "InnoDB",
  "field_order": [
   "title",
+  "project",
   "description",
+  "assign_to",
   "status",
   "due_date"
  ],
@@ -33,11 +35,23 @@
    "fieldname": "due_date",
    "fieldtype": "Date",
    "label": "Due Date"
+  },
+  {
+   "fieldname": "assign_to",
+   "fieldtype": "Link",
+   "label": "Assign to",
+   "options": "Worker"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project GlobalSphere"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-10 03:59:25.637260",
+ "modified": "2025-02-10 19:43:29.419930",
  "modified_by": "Administrator",
  "module": "GlobalSphere",
  "name": "Tasks",
@@ -53,6 +67,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "worker",
    "share": 1,
    "write": 1
   }
